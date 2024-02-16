@@ -4,108 +4,282 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon-bacteria.ico" type="image/x-icon">
-    <title>LabMicra Collection</title>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Grouping Tags</title>
+    <title>Catálogo</title>
     <style>
+        /* Estilos Globais */
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: lightgrey;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #666;
         }
 
-        header, nav, main, footer {
+        .container {
             max-width: 800px;
-            min-width: 400px;
             margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        h1, h2 {
+            margin: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos do Cabeçalho */
         header {
             background-color: #20558A;
             color: white;
-            padding: 10px 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
         }
-        header > h1, p {
+
+        header > p {
             margin: 0px;
             padding: 0px;
         }
 
-        nav {        
-            
-            background-color: #DCE4EF;          
-            padding: 10px 10px;
+        /* Estilos da Navegação */
+        nav {
+            background-color: #DCE4EF;
+            padding: 10px;
             text-align: right;
+            border-radius: 0 0 8px 8px;
         }
-        nav > a {
-            text-decoration: none;
+
+        nav a {
             color: #4d4d4d;
             font-size: 14px;
             font-weight: bold; 
             padding: 7px 20px;
+            margin-left: 10px;
         }
-        nav > a:hover {
+
+        nav a:hover {
             background-color: rgba(255, 255, 255, 0.836);
             color: #000000;
             border-radius: 3px;
         }
 
+        /* Estilos do Conteúdo Principal */
         main {
-            background-color: white;
-            padding: 10px;
+            padding: 20px;
         }
 
-        /* Rodapé */
+        article {
+            margin-bottom: 20px;
+        }
+
+        article h2 {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos do Rodapé */
         footer {
             background-color: #20558A;
             color: white;
-            padding: 10px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
         }
+
         footer > p {
+            padding: 0px;
             margin: 0px;
-            font-size: 10px;
-            text-align: right;
+            font-size: 12px;
         }
+
         .scientific-name {
             font-style: italic;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>LabMicra</h1>
-        <p><i>Laboratório de Microbiologia</i></p>
-    </header> 
-    
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#">History</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="#">Team</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div class="container">
+        <header>
+            <h1>Collection</h1>
+            <p><i>Coleção de Microrganismos</i></p>
+        </header>
 
-    <main>
-        <section>
-            <H2>Catalogue</H2>
-            <ul type="1" class="scientific-name">
-                <li href="#"><a href="">Actinomyces</a></li>
-                <ul type="1">
-                    <li><a href="cat/LM209.html">Actinomyces graevenitzii</a></li>
-                    <li><a href="">Actinomyces oris</a></a></li>
-                    <li><a href="">Actinomyces bouchesdurhonensis</a></li>
-                    <li><a href="">Actinomyces massiliensis</a></li>
-                    <li><a href="">Actinomyces dentalis</a></li>
-                    <li><a href="">Actinomyces naeslundii</a></li>
-                    <li><a href="">Actinomyces gerencseriae</a></li>
-                    <li><a href="">Actinomyces johnsonii</a></li>
-                    <li><a href="">Actinomyces timonensis</a></li>
-                    <li><a href="">Actinomyces israelii</a></li>
+        <nav>
+            <a href="index.html">Sobre</a>
+            <a href="catalogue.html">Catálogo</a>
+            <a href="team.html">Equipe</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+
+        <main>
+            <section>
+                <H2>Catalogue</H2>
+                <ul type="1" class="scientific-name">
+                    <li href="#"><a href="">Actinomyces</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Actinomyces graevenitzii</a></li>
+                        <li><a href="cat/LM209.html">Actinomyces oris</a></a></li>
+                        <li><a href="cat/LM209.html">Actinomyces bouchesdurhonensis</a></li>
+                        <li><a href="cat/LM209.html">Actinomyces massiliensis</a></li>
+                        <li><a href="cat/LM209.html">Actinomyces dentalis</a></li>
+                        <li><a href="cat/LM209.html">Actinomyces naeslundii</a></li>
+                        <li><a href="cat/LM209.html">Actinomyces gerencseriae</a></li>
+                        <li><a href="cat/LM209.html">Actinomyces johnsonii</a></li>
+                        <li><a href="cat/LM209.html">Actinomyces timonensis</a></li>
+                        <li><a href="cat/LM209.html">Actinomyces israelii</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Aggregatibacter</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Aggregatibacter segnis</a></li>
+                        <li><a href="cat/LM209.html">Aggregatibacter aphrophilus</a></li>
+                        <li><a href="cat/LM209.html">Aggregatibacter actinomycetemcomitans</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Campylobacter</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Campylobacter concisus</a></li>
+                        <li><a href="cat/LM209.html">Campylobacter showae</a></li>
+                        <li><a href="cat/LM209.html">Campylobacter rectus</a></li>
+                        <li><a href="cat/LM209.html">Campylobacter gracilis</a></li>
+                        <li><a href="cat/LM209.html">Campylobacter curvus</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Capnocytophaga</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Capnocytophaga leadbetteri</a></li>
+                        <li><a href="cat/LM209.html">Capnocytophaga gingivalis</a></li>
+                        <li><a href="cat/LM209.html">Capnocytophaga sputigena</a></li>
+                        <li><a href="cat/LM209.html">Capnocytophaga granulosa</a></li>
+                        <li><a href="cat/LM209.html">Capnocytophaga ochracea</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Fusobacterium</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Fusobacterium pseudoperiodonticum</a></li>
+                        <li><a href="cat/LM209.html">Fusobacterium nucleatum</a></li>
+                        <li><a href="cat/LM209.html">Fusobacterium hwasookii</a></li>
+                        <li><a href="cat/LM209.html">Fusobacterium massiliense</a></li>
+                        <li><a href="cat/LM209.html">Fusobacterium gonidiaformans</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Haemophilus</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Haemophilus parainfluenzae</a></li>
+                        <li><a href="cat/LM209.html">Haemophilus influenzae</a></li>
+                        <li><a href="cat/LM209.html">Haemophilus sputorum</a></li>
+                        <li><a href="cat/LM209.html">Haemophilus parahaemolyticus</a></li>
+                        <li><a href="cat/LM209.html">Haemophilus haemolyticus</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Leptotrichia</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Leptotrichia wadei</a></li>
+                        <li><a href="cat/LM209.html">Leptotrichia massiliensis</a></li>
+                        <li><a href="cat/LM209.html">Leptotrichia buccalis</a></li>
+                        <li><a href="cat/LM209.html">Leptotrichia hofstadii</a></li>
+                        <li><a href="cat/LM209.html">Leptotrichia shahii</a></li>
+                        <li><a href="cat/LM209.html">Leptotrichia hongkongensis</a></li>
+                        <li><a href="cat/LM209.html">Leptotrichia trevisanii</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Prevotella</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Prevotella melaninogenica</a></li>
+                        <li><a href="cat/LM209.html">Prevotella histicola</a></li>
+                        <li><a href="cat/LM209.html">Prevotella aurantiaca</a></li>
+                        <li><a href="cat/LM209.html">Prevotella nanceiensis</a></li>
+                        <li><a href="cat/LM209.html">Prevotella salivae</a></li>
+                        <li><a href="cat/LM209.html">Prevotella pallens</a></li>
+                        <li><a href="cat/LM209.html">Prevotella nigrescens</a></li>
+                        <li><a href="cat/LM209.html">Prevotella shahii</a></li>
+                        <li><a href="cat/LM209.html">Prevotella conceptionensis</a></li>
+                        <li><a href="cat/LM209.html">Prevotella oris</a></li>
+                        <li><a href="cat/LM209.html">Prevotella loescheii</a></li>
+                        <li><a href="cat/LM209.html">Prevotella oulorum</a></li>
+                        <li><a href="cat/LM209.html">Prevotella denticola</a></li>
+                        <li><a href="cat/LM209.html">Prevotella micans</a></li>
+                        <li><a href="cat/LM209.html">Prevotella marshii</a></li>
+                        <li><a href="cat/LM209.html">Prevotella saccharolytica</a></li>
+                        <li><a href="cat/LM209.html">Prevotella jejuni</a></li>
+                        <li><a href="cat/LM209.html">Prevotella oralis</a></li>
+                        <li><a href="cat/LM209.html">Prevotella intermedia</a></li>
+                        <li><a href="cat/LM209.html">Prevotella fusca</a></li>
+                        <li><a href="cat/LM209.html">Prevotella veroralis</a></li>
+                        <li><a href="cat/LM209.html">Prevotella koreensis</a></li>
+                        <li><a href="cat/LM209.html">Prevotella buccae</a></li>
+                        <li><a href="cat/LM209.html">Prevotella baroniae</a></li>
+                        <li><a href="cat/LM209.html">Prevotella pleuritidis</a></li>
+                        <li><a href="cat/LM209.html">Prevotella scopos</a></li>
+                        <li><a href="cat/LM209.html">Prevotella enoeca</a></li>
+                        <li><a href="cat/LM209.html">Prevotella maculosa</a></li>
+                        <li><a href="cat/LM209.html">Prevotella multiformis</a></li>
+                        <li><a href="cat/LM209.html">Prevotella multisaccharivorax</a></li>
+                        <li><a href="cat/LM209.html">Prevotella dentalis</a></li>
+                        <li><a href="cat/LM209.html">Prevotella bivia</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Streptococcus</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Streptococcus mitis</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus oralis</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus rubneri</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus infantis</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus sanguinis</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus gordonii</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus cristatus</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus intermedius</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus salivarius</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus constellatus</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus anginosus</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus parasanguinis</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus pneumoniae</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus mutans</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus massiliensis</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus sinensis</a></li>
+                        <li><a href="cat/LM209.html">Streptococcus thermophilus</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Treponema</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Treponema lecithinolyticum</a></li>
+                        <li><a href="cat/LM209.html">Treponema socranskii</a></li>
+                        <li><a href="cat/LM209.html">Treponema denticola</a></li>
+                        <li><a href="cat/LM209.html">Treponema maltophilum</a></li>
+                        <li><a href="cat/LM209.html">Treponema vincentii</a></li>
+                        <li><a href="cat/LM209.html">Treponema medium</a></li>
+                    </ul>
+
+                    <li href="#"><a href="cat/LM209.html">Veillonella</a></li>
+                    <ul type="1">
+                        <li><a href="cat/LM209.html">Veillonella rogosae</a></li>
+                        <li><a href="cat/LM209.html">Veillonella tobetsuensis</a></li>
+                        <li><a href="cat/LM209.html">Veillonella dispar</a></li>
+                        <li><a href="cat/LM209.html">Veillonella parvula</a></li>
+                        <li><a href="cat/LM209.html">Veillonella atypica</a></li>
+                    </ul>
                 </ul>
-            </ul>            
-        </section>
-    </main>
+                
+            </section>
+        </main>
 
-    <footer>
-        <p>Desenvolvido por Anderson N. Barbosa</p>
-    </footer>
+        <footer>
+            <p>&copy; 2024 Anderson N. Barbosa. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-</html> 
+</html>

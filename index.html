@@ -4,119 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon-bacteria.ico" type="image/x-icon">
-    <title>LabMicra Collection</title>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Grouping Tags</title>
+    <title>Collection</title>
     <style>
+        /* Estilos Globais */
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: lightgrey;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #666;
         }
 
-        header, nav, main, footer {
+        .container {
             max-width: 800px;
-            min-width: 400px;
             margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        h1, h2 {
+            margin: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos do Cabeçalho */
         header {
             background-color: #20558A;
             color: white;
-            padding: 10px 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
         }
-        header > h1, p {
+
+        header > p {
             margin: 0px;
             padding: 0px;
         }
 
-        nav {        
-            
-            background-color: #DCE4EF;          
-            padding: 10px 10px;
+        /* Estilos da Navegação */
+        nav {
+            background-color: #DCE4EF;
+            padding: 10px;
             text-align: right;
+            border-radius: 0 0 8px 8px;
         }
-        nav > a {
-            text-decoration: none;
+
+        nav a {
             color: #4d4d4d;
             font-size: 14px;
             font-weight: bold; 
             padding: 7px 20px;
+            margin-left: 10px;
         }
-        nav > a:hover {
+
+        nav a:hover {
             background-color: rgba(255, 255, 255, 0.836);
             color: #000000;
             border-radius: 3px;
         }
 
+        /* Estilos do Conteúdo Principal */
         main {
-            background-color: white;
-            padding: 10px;
+            padding: 20px;
         }
 
-        /* Rodapé */
+        article {
+            margin-bottom: 20px;
+        }
+
+        article h2 {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos do Rodapé */
         footer {
             background-color: #20558A;
             color: white;
-            padding: 10px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
         }
+
         footer > p {
+            padding: 0px;
             margin: 0px;
-            font-size: 10px;
-            text-align: right;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>LabMicra</h1>
-        <p><i>Laboratório de Microbiologia</i></p>
-    </header> 
-    
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">History</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="#">Team</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div class="container">
+        <header>
+            <h1>Collection</h1>
+            <p><i>Coleção de Microrganismos</i></p>
+        </header>
 
-    <main>
-        <section>
-            <article>
-                <h2>Apresentation</h2>
-                <p>The LabMicra, which is part of the Universidade Federal do
-                    Amazonas (UFAM) Biological Collection, constitutes a scientifically
-                    significant asset. LabMicra is affiliated with the World Federation
-                    for Culture Collections (WFCC), under registration number WDCM
-                    956. It consists of a collection of Amazonian bacteria,
-                    isolated, identified, and preserved using lyophilization and stored
-                    at -20ºC.</p><br>
-                    
-                    <p>The bacterial cultures comprising LabMicra are
-                    derived from clinical isolates such as those from oropharyngeal
-                    and human feces, as well as from natural environments such as
-                    river water, streams, and soils. The main bacteria included in
-                    the collection are Escherichia coli, Staphylococcus aureus,
-                    Bacillus cereus, Pseudomonas aeruginosa, among others. The
-                    collection is of significant importance as it is composed of
-                    bacterial strains isolated from different substrates of the
-                    Brazilian Amazon, a region still underexplored in terms of its
-                    microbial richness.</p><br>
-                    
-                    <p>LabMicra provides services
-                    to fulfill requests for bacterial culture supply to various
-                    national and international research/educational institutions, as
-                    well as offering training for students and professionals in
-                    bacterial identification. LabMicra is also
-                    characterizing the already stored cultures in terms of biotechnological
-                    aspects such as the production of industrial enzymes and profiling
-                    antibiotic resistance and sensitivity.</p><br>
-            </article>
-        </section>
-    </main>
+        <nav>
+            <a href="index.html">Sobre</a>
+            <a href="catalogue.html">Catálogo</a>
+            <a href="team.html">Equipe</a>
+            <a href="contact.html">Contato</a>
+        </nav>
 
-    <footer>
-        <p>Desenvolvido por Anderson N. Barbosa</p>
-    </footer>
+        <main>
+            <section>
+                <article>
+                    <h2>Collection</h2>
+                    <p>Bem-vindo a Collection, uma plataforma exclusiva para acesso e compartilhamento de cepas de microrganismos, um tesouro biológico único e vital para a pesquisa científica nacional. Aqui, oferecemos uma coleção abrangente de cepas microbianas coletadas diretamente da rica biodiversidade, prontas para impulsionar a ciência e a inovação em todo o Brasil.</p>
+                    <p>A Collection é uma iniciativa colaborativa dedicada a promover o acesso aberto e compartilhado a cepas microbianas, reconhecendo o valor inestimável desses microrganismos para avanços nas áreas de biotecnologia, medicina, agricultura e conservação ambiental.</p>
+                    <p>Em nossa plataforma, os pesquisadores têm a oportunidade de explorar nossa extensa base de dados de cepas microbianas, cada uma delas cuidadosamente coletada, identificada e caracterizada para garantir sua autenticidade e relevância científica. Nossa coleção inclui uma ampla variedade de microrganismos, desde bactérias até fungos, todos provenientes de ecossistemas únicos.</p>
+                    <p>Com a Collection, facilitamos o processo de busca e descoberta de cepas específicas, fornecendo informações detalhadas sobre a origem, as características e as aplicações potenciais de cada microrganismo em nossa coleção. Além disso, nossa plataforma oferece ferramentas robustas para compartilhar e colaborar com outros pesquisadores, promovendo o intercâmbio de conhecimentos e recursos para impulsionar a pesquisa científica nacional.</p>
+                    <p>Junte-se a nós nesta jornada emocionante de exploração e descoberta. Explore a <a href="#">Collection</a> hoje e desbloqueie o potencial infinito dos microrganismos da para avanços científicos e inovação.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Anderson N. Barbosa. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-</html> 
+</html>
